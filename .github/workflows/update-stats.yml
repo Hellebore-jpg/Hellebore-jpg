@@ -15,7 +15,20 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate stats card
+      # ---------- Carte stats ----------
+      - name: Stats card (private + public, with PAT)
+        id: stats_pat
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true
+          path: profile/stats.svg
+          token: ${{ secrets.STATS_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (public only, fallback)
+        if: steps.stats_pat.outcome == 'failure'
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
@@ -23,7 +36,20 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate top languages card
+      # ---------- Carte langages ----------
+      - name: Top languages card (private + public, with PAT)
+        id: langs_pat
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages card (public only, fallback)
+        if: steps.langs_pat.outcome == 'failure'
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
@@ -31,6 +57,12 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ---------- Alerte ----------
+      - name: Warn if the PAT failed
+        if: steps.stats_pat.outcome == 'failure' || steps.langs_pat.outcome == 'failure'
+        run: echo "::warning::STATS_TOKEN a échoué (expiré, révoqué ou absent). Cartes générées avec les stats publiques uniquement."
+
+      # ---------- Commit ----------
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
