@@ -74,8 +74,8 @@
 ## 📊 Stats GitHub
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Hellebore-jpg&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hellebore-jpg&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="170" src="./profile/stats.svg" alt="Statistiques GitHub" />
+  <img height="170" src="./profile/top-langs.svg" alt="Langages les plus utilisés" />
 </p>
 
 ---
@@ -88,6 +88,6 @@
   <a href="https://discord.com/users/1558837681465729027"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
 </p>
 
-<p align="center"><i>« Le plus grand risque en matière de cybersécurité est l'ignorance. » – Kevin Mitnick</i></p>
+<p align="center"><i>« Le plus grand risque en matière de cybersécurité est l'ignorance. » - Kevin Mitnick</i></p>
 
 <p align="center"><sub>⚠️ Tous mes tests sont réalisés dans un cadre légal ⚠️</sub></p>
