@@ -72,10 +72,16 @@
 ---
 
 ## 📊 Stats GitHub
-
+ 
+<!--
+  Ces images sont générées par une GitHub Action (voir `/.github/workflows/update-stats.yml`) et générées dans le dossier `/profile/` de ce dépôt.
+-->
 <p align="center">
   <img height="170" src="./profile/stats.svg" alt="Statistiques GitHub" />
   <img height="170" src="./profile/top-langs.svg" alt="Langages les plus utilisés" />
+</p>
+<p align="center">
+  <img src="./profile/stats-mode.svg" alt="Portée des statistiques" />
 </p>
 
 ---
