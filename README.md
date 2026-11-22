@@ -96,4 +96,14 @@
 
 <p align="center"><i>« Le plus grand risque en matière de cybersécurité est l'ignorance. » - Kevin Mitnick</i></p>
 
+## ⚠️ Avertissement - Cybersécurité et utilisation éthique
+
+Mes connaissances et compétences en cybersécurité sont destinées à des fins éducatives, défensives, professionnelles et éthiques.
+
+Je ne prends aucune demande impliquant du piratage, du doxxing, de l'accès non autorisé, du vol de comptes ou de données, de l'espionnage, du harcèlement, des représailles numériques, du sabotage ou toute autre activité malveillante visant des personnes, des comptes, des systèmes ou des services.
+
+Cette position s'applique quelles que soient les circonstances, les justifications avancées ou les éventuels différends entre les personnes concernées. Un préjudice supposé ou avéré ne justifie pas de prendre soi-même des mesures illégitimes.
+
+Merci de ne pas me solliciter pour ce type de demande. Toute sollicitation entrant dans ce cadre sera systématiquement refusée, sans exception ni discussion supplémentaire.
+
 <p align="center"><sub>⚠️ Tous mes tests sont réalisés dans un cadre légal ⚠️</sub></p>
