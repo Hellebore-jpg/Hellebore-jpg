@@ -65,8 +65,8 @@
 -->
 ## 📜 Certifications & Formations
 
-- ✅ Baccalauréat Général Spécialités NSI & LLCER Anglais – 2026
-- ✅ Cambridge English Certificate niveau C1 – 2026
+- ✅ Baccalauréat Général Spécialités NSI & LLCER Anglais, mention Assez bien - 2026
+- ✅ Cambridge English Certificate, niveau C1 - 2026
 - ⏳ En préparation : Bachelor en Cybersécurité à Guardia CS
 
 ---
